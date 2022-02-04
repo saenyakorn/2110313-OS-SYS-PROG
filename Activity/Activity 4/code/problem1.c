@@ -3,10 +3,9 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-int main()
+int main(int argc, char *argv[])
 {
   pid_t pid;
-  char *av[] = {"cal", "3", "2021", (char *)0};
 
   pid = fork();
   if (pid < 0)
@@ -16,7 +15,7 @@ int main()
   }
   else if (pid == 0)
   {
-    execvp("cal", av);
+    execvp(argv[1], argv + 1);
   }
   else
   {
