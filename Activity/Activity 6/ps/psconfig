@@ -1,7 +1,7 @@
 logdir .
 logfn logfile.html
 imagename gifim
-user Local User
+user 6232035721
 quiet
 portable true
 run myrun
