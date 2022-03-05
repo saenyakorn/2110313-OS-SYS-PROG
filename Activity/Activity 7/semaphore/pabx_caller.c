@@ -15,6 +15,7 @@ int rand_int(int n)
 int main(int argc, char **argv)
 {
 	printf("Starting caller\n");
+	pid_t pid = getpid();
 
 	//
 	// OS -- OPEN NAMED SEMAPHORE HERE
@@ -27,7 +28,7 @@ int main(int argc, char **argv)
 		int wait_time = rand_int(3);
 		printf("Wait for %d seconds\n", wait_time);
 		sleep(wait_time);
-		printf("Access outside phone line\n");
+		printf("PID[%d] Access outside phone line\n", pid);
 		time_t t0 = time(NULL);
 		// Try to get the line
 
@@ -39,7 +40,7 @@ int main(int argc, char **argv)
 		time_t t = time(NULL) - t0;
 		// We get the phone line, using it for 1-5 seconds.
 		int call_time = rand_int(5);
-		printf("Get a phone line after waiting for %d seconds.  I will use for %d seconds.\n", t, call_time);
+		printf("PID[%d] Get a phone line after waiting for %d seconds.  I will use for %d seconds.\n", pid, t, call_time);
 		sleep(call_time);
 		// We hang up the phone
 
@@ -48,6 +49,6 @@ int main(int argc, char **argv)
 		//
 		sem_post(pabx);
 
-		printf("Hang up the phone.\n");
+		printf("PID[%d] Hang up the phone.\n", pid);
 	}
 }
