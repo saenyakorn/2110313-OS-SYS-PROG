@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	//
 	// OS -- CRAETE NAMED SEMAPHORE HERE
 	//
-	sem_t *phone_lines = sem_open("phone_lines", O_CREAT, 0644, num_lines);
+	sem_t *pabx = sem_open("pabx", O_EXCL, 0644, num_lines);
 
 	int semval;
 	while (1)
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		//
 		// OS -- PLACE CURRENT VALUE OF SEMAPHORE IN 'semval' HERE
 		//
-		int status = sem_getvalue(phone_lines, &semval);
+		int status = sem_getvalue(pabx, &semval);
 
 		printf("status: %d, There are %d phone lines available.\n", status, semval);
 		sleep(3);

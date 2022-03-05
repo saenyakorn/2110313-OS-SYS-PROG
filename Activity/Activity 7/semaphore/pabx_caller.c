@@ -19,6 +19,7 @@ int main(int argc, char **argv)
 	//
 	// OS -- OPEN NAMED SEMAPHORE HERE
 	//
+	sem_t *pabx = sem_open("pabx", O_CREAT, 0644, 1);
 
 	while (1)
 	{
@@ -33,6 +34,7 @@ int main(int argc, char **argv)
 		//
 		// OS -- LOCK SEMAPHORE HERE
 		//
+		sem_wait(pabx);
 
 		time_t t = time(NULL) - t0;
 		// We get the phone line, using it for 1-5 seconds.
@@ -40,10 +42,12 @@ int main(int argc, char **argv)
 		printf("Get a phone line after waiting for %d seconds.  I will use for %d seconds.\n", t, call_time);
 		sleep(call_time);
 		// We hang up the phone
+		printf("Hang up the phone\n");
 
 		//
 		// OS -- UNLOCK SEMAPHORE HERE
 		//
+		sem_post(pabx);
 
 		printf("Hang up the phone.\n");
 	}
