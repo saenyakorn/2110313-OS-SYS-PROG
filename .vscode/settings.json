@@ -3,6 +3,9 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "files.associations": {
-    "wait.h": "c"
+    "wait.h": "c",
+    "stdlib.h": "c",
+    "unistd.h": "c",
+    "semaphore.h": "c"
   }
 }
