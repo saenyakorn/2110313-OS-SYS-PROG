@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	//
 	// OS -- CRAETE NAMED SEMAPHORE HERE
 	//
-	sem_t *pabx = sem_open("pabx", O_EXCL, 0644, num_lines);
+	sem_t *pabx = sem_open("pabx", O_CREAT, 0644, num_lines);
 
 	int semval;
 	while (1)
