@@ -42,7 +42,6 @@ int main(int argc, char **argv)
 		printf("Get a phone line after waiting for %d seconds.  I will use for %d seconds.\n", t, call_time);
 		sleep(call_time);
 		// We hang up the phone
-		printf("Hang up the phone\n");
 
 		//
 		// OS -- UNLOCK SEMAPHORE HERE
