@@ -1,0 +1,22 @@
+55eb1d056000-55eb1d057000 r--p 00000000 08:30 45959                      /home/joppy/user/2110313-OS-SYS-PROG/Activity/Activity 8/memusage
+55eb1d057000-55eb1d058000 r-xp 00001000 08:30 45959                      /home/joppy/user/2110313-OS-SYS-PROG/Activity/Activity 8/memusage
+55eb1d058000-55eb1d059000 r--p 00002000 08:30 45959                      /home/joppy/user/2110313-OS-SYS-PROG/Activity/Activity 8/memusage
+55eb1d059000-55eb1d05a000 r--p 00002000 08:30 45959                      /home/joppy/user/2110313-OS-SYS-PROG/Activity/Activity 8/memusage
+55eb1d05a000-55eb1d05b000 rw-p 00003000 08:30 45959                      /home/joppy/user/2110313-OS-SYS-PROG/Activity/Activity 8/memusage
+55eb1e502000-55eb1e523000 rw-p 00000000 00:00 0                          [heap]
+7f312ed46000-7f312ed6b000 r--p 00000000 08:30 12114                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f312ed6b000-7f312eee3000 r-xp 00025000 08:30 12114                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f312eee3000-7f312ef2d000 r--p 0019d000 08:30 12114                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f312ef2d000-7f312ef2e000 ---p 001e7000 08:30 12114                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f312ef2e000-7f312ef31000 r--p 001e7000 08:30 12114                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f312ef31000-7f312ef34000 rw-p 001ea000 08:30 12114                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7f312ef34000-7f312ef3a000 rw-p 00000000 00:00 0 
+7f312ef42000-7f312ef43000 r--p 00000000 08:30 11981                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f312ef43000-7f312ef66000 r-xp 00001000 08:30 11981                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f312ef66000-7f312ef6e000 r--p 00024000 08:30 11981                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f312ef6f000-7f312ef70000 r--p 0002c000 08:30 11981                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f312ef70000-7f312ef71000 rw-p 0002d000 08:30 11981                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7f312ef71000-7f312ef72000 rw-p 00000000 00:00 0 
+7ffc2bfd5000-7ffc2bff6000 rw-p 00000000 00:00 0                          [stack]
+7ffc2bff6000-7ffc2bffa000 r--p 00000000 00:00 0                          [vvar]
+7ffc2bffa000-7ffc2bffb000 r-xp 00000000 00:00 0                          [vdso]

@@ -17,7 +17,7 @@ int main(void)
 
   int FILESIZE = (1024 * 1024);
   char *FILENAME = "mmap.dat";
-  char *data = "hello";
+  char *data = "just monika ";
   int len;
 
   printf("Program starts. Press Enter to continue.\n");
